@@ -1,0 +1,19 @@
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<p>
+ </p>
+<style>
+body{
+      & form-wrapper & message {
+            color: #fff;
+        }
+   {% for message in messages %}
+    <div class="text-light">
+   <h2>Sign Up Complete </h2>
+    {% include 'message.html' %}
+
+</div>
+    {% endfor %}
+</p>
+{% endif %}
+{% endwith %}
